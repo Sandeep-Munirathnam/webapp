@@ -72,4 +72,25 @@
       </plugins>
     </pluginManagement>
   </build>
+
+  <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  ...
+  <distributionManagement>
+    <repository>
+      <uniqueVersion>false</uniqueVersion>
+      <id>webapp_releases</id>
+      <name>webapp_releases</name>
+      <url>http://44.201.187.22:8081/nexus/content/repositories/webapp_releases/</url>
+      <layout>default</layout>
+    </repository>
+    <snapshotRepository>
+      <uniqueVersion>true</uniqueVersion>
+      <id>webapp_snapshots</id>
+      <name>webapp_snapshots</name>
+      <url>http://44.201.187.22:8081/nexus/content/repositories/webapp_snapshots/</url>
+      <layout>legacy</layout>
+    </snapshotRepository>
+  </distributionManagement>
+</project>
 </project>
